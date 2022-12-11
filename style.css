@@ -2,7 +2,7 @@ body, html{
    margin: 0;
    padding: 0;
    height: 100%;
-   overflow: auto;
+   
 }
 body{
    font-family: 'Montserrat', sans-serif;
@@ -676,4 +676,53 @@ font-weight: 700;
    font-family: "Roboto", sans-serif;
    font-size: 15px;
    font-style: italic;
+}
+
+
+/* ================ Footer ===================== */
+
+.footer{
+   width: 100%;
+   height: 200px;
+   background-color: rgb(199 196 196);
+   position: relative;
+   overflow: hidden;
+}
+.map{
+   opacity: .2;
+}
+.footer__info{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   cursor: pointer;
+   text-decoration: none;
+}
+.footer__info img{
+   margin-bottom: 10px;
+}
+.footer__info-text{
+   color: #f38181;
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+   position: relative;
+}
+.footer__info-text::after{
+   content: "";
+   display: block;
+   
+   width: 60px;
+   height: 3px;
+   background-color: #f38181;
+
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 40px;
 }
