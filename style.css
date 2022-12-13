@@ -215,10 +215,12 @@ font-weight: 700;
 }
 .stat__inner{
    display: flex;
+   flex-wrap: wrap;
 }
 .stat__item{
    display: flex;
    flex-direction: column;
+   
    align-items: center;
    justify-content: center;
    width: 20%;
@@ -285,18 +287,29 @@ font-weight: 700;
 .service__inner{
    display: flex;
    flex-wrap: wrap;
-   border-bottom: 1px solid #e5e5e5;
-   padding-bottom: 40px;
+   
 }
-.service__inner:last-child{
-   border-bottom: none;
-   padding-top: 40px;
-   padding-bottom: 0;
-}
+
 .service__item{
    width: 33.3333%;
    display: flex;
-
+   
+}
+.service__item:nth-child(1),
+.service__item:nth-child(2),
+.service__item:nth-child(3){
+   margin-bottom: 40px;
+}
+.service__item:nth-child(4),
+.service__item:nth-child(5),
+.service__item:nth-child(6),
+.service__item:nth-child(7){
+   margin-top: 40px;
+}
+.hr{
+   width: 100%;
+   height: 1px;
+   background-color: #e5e5e5;
 }
 .service__logo{
    padding: 0 15px;
@@ -755,6 +768,12 @@ font-weight: 700;
    .stat__text{
       font-size: 14px;
    }
+
+   /* Section */
+
+   .section{
+      padding: 60px 0 0 0;
+   }
 }
 
 
@@ -787,6 +806,32 @@ font-weight: 700;
    .stat__text{
       font-size: 12px;
    }
+
+   /* Section */
+
+   .section__title{
+      font-size: 26px;
+   }
+   .section__title::after{
+      margin: 30px auto 40px;
+   }
+
+   /* Service */
+
+   .service__item{
+      width: 50%;
+      
+   }
+   .service__item:nth-child(4),
+   .service__item:nth-child(5),
+   .service__item:nth-child(6),
+   .service__item:nth-child(7){
+      margin-bottom: 40px;
+      margin-top: 0;
+   }
+   .hr{
+      display: none;
+   }
 }
 
 @media(max-width: 750px) {
@@ -804,6 +849,30 @@ font-weight: 700;
 
    .nav{
       display: none;
+   }
+
+   /* Statistic */
+
+   .stat__inner{
+      justify-content: center;
+   }
+   .stat__item{
+      width: 33.3333%;
+      border: 0;
+   }
+   .stat__item:last-child{
+      border: 0;
+   }
+
+   /* WeDo */
+
+   .wedo{
+      flex-wrap: wrap;
+   }
+
+   .wedo__item{
+      width: 100%;
+      margin-bottom: 10px;
    }
 }
 
@@ -825,5 +894,36 @@ font-weight: 700;
    }
    .slider__item span{
       display: none;
+   }
+
+   /* Statistic */
+
+   .stat__item{
+      width: 100%;
+      padding: 15px 0;
+      border-bottom: 1px solid #aae7dc;
+   }
+
+   .stat__item:last-child{
+      border-bottom: 0;
+   }
+   
+   /* Service */
+
+   .service__item{
+      width: 100%;
+      align-items: center;
+   }
+   .service__item-inner{
+      padding: 0;
+   }
+   .service__item:last-child{
+      margin-bottom: 0;
+   }
+
+   /* Section */
+
+   .section{
+      padding: 40px 0 0 0;
    }
 }
