@@ -739,6 +739,7 @@ font-weight: 700;
    margin-bottom: 10px;
 }
 .footer__info-text{
+   text-decoration: none;
    color: #f38181;
    font-size: 24px;
    font-weight: 700;
@@ -962,6 +963,20 @@ font-weight: 700;
    }
 }
 
+@media (max-height: 750px) {
+
+   /* First */
+
+   .first__subtitle{
+      font-size: 50px;
+      margin-bottom: 15px;
+   }
+   .first__title{
+      font-size: 85px;
+      margin-bottom: 70px;
+   }
+}
+
 @media(max-width: 550px) {
 
    /* First */
@@ -1041,4 +1056,202 @@ font-weight: 700;
    .lables{
       padding: 30px 0;
    }
+
+   /* Works */
+
+   .info__icon{
+      margin-bottom: 10px;
+      width: 20px;
+   }
+   .works__title{
+      font-size: 12px;
+   }
+   .works__text{
+      font-size: 12px;
+   }
+}
+
+@media (max-height: 550px) {
+
+   /* Header */
+
+   .header{
+      padding: 10px 0;
+   }
+   .header__logo{
+      font-size: 25px;
+   }
+   .nav{
+      font-size: 12px;
+   }
+   .nav-item{
+      margin: 0 10px;
+   }
+
+   /* Button */
+
+   .btn{
+      height: 35px;
+      width: 120px;
+      font-size: 12px;
+   }
+
+   /* First */
+
+   .first__subtitle{
+      font-size: 30px;
+      margin-bottom: 5px;
+   }
+   .first__title{
+      font-size: 50px;
+      margin-bottom: 35px;
+   }
+
+   /* Slider */
+
+   .slider__item{
+      font-size: 16px;
+      padding: 5px 0;
+   }
+   .slider__item span{
+      font-size: 14px;
+   }
+
+   /* Statistic */
+
+   .stat__item{
+      padding: 30px 0;
+   }
+   .stat__num{
+      font-size: 30px;
+      margin-bottom: 10px;
+   }
+
+   /* Accordeon */
+
+   .accordeon__title{
+      padding: 10px;
+      font-size: 12px;
+   }
+   .accordeon__text{
+      padding: 10px;
+      font-size: 13px;
+      line-height: 20px;
+   }
+
+   /* Section */
+
+   .section{
+      padding: 40px 0 0 0;
+   }
+   .section__title::after{
+      margin: 30px auto;
+   }
+   .section__text{
+      margin: 0 auto 40px;
+   }
+
+   /* Rewievs */
+
+   .reviews{
+      margin-top: 50px;
+      padding: 20px 0;
+   }
+   .reviews__text{
+      font-size: 16px;
+   }
+   .reviews__author{
+      font-size: 20px;
+   }
+
+   /* Lables */
+
+   .lables{
+      padding: 30px 0;
+   }
+
+   /* Works */
+
+   .info__icon{
+      width: 20px;
+   }
+   .works__title{
+      font-size: 12px;
+   }
+   .works__text{
+      font-size: 12px;
+   }
+
+   /* Footer */
+
+   .footer{
+      height: 150px;
+   }
+   .footer__info-text{
+      font-size: 20px;
+   }
+   .footer__info-text::after{
+      top: 35px;
+      height: 2px;
+   }
+}
+
+@media(max-width: 400px) {
+
+   /* First */
+
+   .first__subtitle{
+      font-size: 34px;
+
+   }
+   .first__title{
+      font-size: 50px;
+   }
+}
+
+
+@media (max-height: 350px) {
+
+   /* First */
+
+   .first__subtitle{
+      font-size: 25px;
+   }
+
+   .first__title{
+      font-size: 36px;
+   }
+
+   .first__title::after{
+      height: 2px;
+   }
+
+   /* Statistic */
+
+   .stat__item{
+      padding: 20px 0;
+   }
+
+   /* Rewievs */
+
+   .reviews__inner{
+      min-height: 400px;
+   }
+
+   /* Footer */
+
+   .footer{
+      height: 100px;
+   }
+   .footer__info img{
+      width: 15px;
+      margin-bottom: 5px;
+   }
+   .footer__info-text{
+      font-size: 15px;
+   }
+   .footer__info-text::after{
+      top: 25px;
+   }
+
 }
