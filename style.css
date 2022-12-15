@@ -1155,7 +1155,7 @@ font-weight: 700;
 
    .reviews{
       margin-top: 50px;
-      padding: 20px 0;
+      padding: 0;
    }
    .reviews__text{
       font-size: 16px;
@@ -1235,7 +1235,7 @@ font-weight: 700;
    /* Rewievs */
 
    .reviews__inner{
-      min-height: 400px;
+      min-height: 366px;
    }
 
    /* Footer */
