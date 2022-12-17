@@ -7,7 +7,7 @@ body, html{
 body{
    font-family: 'Montserrat', sans-serif;
    font-size: 14px;
-   
+   position: relative;
 }
 p{
    padding: 0;
@@ -26,6 +26,52 @@ h1, h2, h3, h4{
    max-width: 1230px;
    margin: 0 auto;
    padding: 0 15px;
+}
+
+/* ================ Up / Down==================== */
+
+.buttons{
+   position: fixed;
+   bottom: 1%;
+   right: 1%;
+   z-index: 1000;
+   
+}
+.buttons__item{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 15px;
+   
+   text-decoration: none;
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 2px solid #ef4747;
+   background: linear-gradient(#e88282, #f0d98a);
+   transition: .2s linear;
+   opacity: .5;
+}
+.buttons__item:hover{
+   opacity: 1;
+}
+.buttons__inner{
+   width: 20px;
+   height: 20px;
+   border-top: 4px solid white;
+   border-left: 4px solid white;
+   position: relative;
+   
+}
+.buttons__up{
+   transform: rotate(45deg);
+   top: 10%;
+   
+}
+.buttons__down{
+   transform: rotate(-135deg);
+   bottom: 10%;
 }
 
 
@@ -764,6 +810,17 @@ font-weight: 700;
 
 @media(max-width: 1230px) {
 
+   /* BUttons */
+
+   .buttons__item{
+      width: 40px;
+      height: 40px;
+   }
+   .buttons__inner{
+      width: 17px;
+      height: 17px;
+   }
+
    /* First */
 
    .first__subtitle{
@@ -801,6 +858,17 @@ font-weight: 700;
 
 
 @media(max-width: 850px) {
+
+   /* BUttons */
+
+   .buttons__item{
+      width: 35px;
+      height: 35px;
+   }
+   .buttons__inner{
+      width: 15px;
+      height: 15px;
+   }
 
    /* First */
 
@@ -978,6 +1046,17 @@ font-weight: 700;
 }
 
 @media(max-width: 550px) {
+
+   /* BUttons */
+
+   .buttons__item{
+      width: 30px;
+      height: 30px;
+   }
+   .buttons__inner{
+      width: 12px;
+      height: 12px;
+   }
 
    /* First */
    
@@ -1198,6 +1277,7 @@ font-weight: 700;
 
 @media(max-width: 400px) {
 
+   
    /* First */
 
    .first__subtitle{
