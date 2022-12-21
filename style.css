@@ -8,6 +8,7 @@ body{
    font-family: 'Montserrat', sans-serif;
    font-size: 14px;
    position: relative;
+   cursor: url(icons/cursor.png), default;
 }
 p{
    padding: 0;
@@ -27,7 +28,9 @@ h1, h2, h3, h4{
    margin: 0 auto;
    padding: 0 15px;
 }
-
+a{
+   cursor: url(icons/cursor-hand.png), default;
+}
 /* ================ Up / Down==================== */
 
 .buttons{
@@ -44,7 +47,7 @@ h1, h2, h3, h4{
    margin-bottom: 15px;
    
    text-decoration: none;
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
    width: 50px;
    height: 50px;
    border-radius: 50%;
@@ -231,7 +234,7 @@ font-weight: 700;
    font-size: 24px;
    font-weight: 700;
    color: #fff;
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
    transition: .2s linear;
    position: relative;
    border-top: #fff 3px solid;
@@ -413,7 +416,7 @@ font-weight: 700;
    color: #333333;
    text-transform: uppercase;
    font-weight: 700;
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
 }
 .accordeon__title::after{
    content: "";
@@ -536,7 +539,7 @@ font-weight: 700;
    border-left: 2px solid #cccccc;
    position: absolute;
    top: calc(50% - 7.5px);
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
 }
 .reviews__inner:before{
    transform: rotate(45deg);
@@ -676,7 +679,7 @@ font-weight: 700;
    justify-content: center;
    align-items: center;
    border-right: 1px solid #f38181;
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
    transition: .2s linear;
 }
 .social__item:hover{
@@ -733,7 +736,7 @@ font-weight: 700;
 .works__item{
    position: relative;
    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
 }
 .works__item:hover .works__img{
    opacity: .1;
@@ -792,7 +795,7 @@ font-weight: 700;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   cursor: pointer;
+   cursor: url(icons/cursor-hand.png), default;
    text-decoration: none;
 }
 .footer__info img{
