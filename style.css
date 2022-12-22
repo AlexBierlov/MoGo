@@ -11,6 +11,10 @@ body{
    position: relative;
    
 }
+::selection{
+   background-color: #95e1d3;
+   color: white;
+}
 p{
    padding: 0;
    margin: 0;
@@ -462,28 +466,6 @@ font-weight: 700;
    right: 15px;
 }
 
-/* #element::-webkit-scrollbar,
-#element1::-webkit-scrollbar,
-#element2::-webkit-scrollbar,
-#element3::-webkit-scrollbar {
-   width: 10px;
-   background-color: #f9f9fd;
-}
-
-#element::-webkit-scrollbar-thumb,
-#element1::-webkit-scrollbar-thumb,
-#element2::-webkit-scrollbar-thumb,
-#element3::-webkit-scrollbar-thumb {
-   border-radius: 10px;
-   background-color: #95e1d3;
-} 
-#element::-webkit-scrollbar-track,#element1::-webkit-scrollbar-track,
-#element2::-webkit-scrollbar-track,
-#element3::-webkit-scrollbar-track {
-   box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-   border-radius: 10px;
-   background-color: #f9f9fd;
-} */
 
 ::-webkit-scrollbar {
    width: 10px;
