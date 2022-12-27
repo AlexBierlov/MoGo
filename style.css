@@ -19,6 +19,11 @@ p{
    padding: 0;
    margin: 0;
 }
+ul,
+li{
+   padding: 0;
+   margin: 0;
+}
 *,
 *::after,
 *::before{
@@ -82,6 +87,112 @@ a{
    bottom: 10%;
 }
 
+/* ================ Burger===================== */
+
+.header__burger{
+   display: none;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.burger__inner{
+   position: relative;
+}
+
+
+
+.burger{
+   cursor: url(icons/cursor-hand.png), default;
+   display: block;
+   transition: .2s linear;
+}
+.burger__img{
+   
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 10px 20px;
+   
+}
+.burger__img span{
+   transition: all .2s linear;
+}
+#burger{
+   width: 0;
+   
+}
+
+
+#burger:checked ~ .burger__nav{
+   display: block;
+}
+
+
+.burger__img .span{
+   display: block;
+   width: 20px;
+   height: 3px;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.burger__img .span1,
+.burger__img .span2{
+   display: block;
+   width: 20px;
+   height: 3px;
+   background-color: #fff;
+   position: relative;
+}
+.burger__img .span1{
+   top: -7px;
+}
+.burger__img .span2{
+   bottom: -7px;
+}
+
+#burger:checked ~ .burger .burger__img span{
+   width: 0;
+}
+#burger:checked ~ .burger .burger__img .span1,
+#burger:checked ~ .burger .burger__img .span2{
+   width: 20px;
+}
+#burger:checked ~ .burger .burger__img .span1{
+   transform: rotate(45deg) translate(10px, 3px) ;
+}
+#burger:checked ~ .burger .burger__img .span2{
+   transform: rotate(-45deg) translate(9px, -2px) ;
+}
+
+.burger__nav{
+   display: none;
+}
+
+.nav__link{
+   list-style: none;
+   padding: 5px 0;
+   transition: .2s linear;
+   cursor: url(icons/cursor-hand.png), default;
+   text-align: end;
+}
+.nav__link:first-child{
+   margin-top: 15px;
+}
+.nav__link:hover{
+   background-color: #e77171;
+}
+.nav__link-item{
+   padding: 0 5px;
+   text-decoration: none;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: white;
+}
+
+
 
 /* ================ Header===================== */
 
@@ -98,6 +209,7 @@ a{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   position: relative;
 }
 .nav{
    display: flex;

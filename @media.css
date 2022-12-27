@@ -242,6 +242,20 @@
    .footer__info-text{
       font-size: 20px;
    }
+
+   /* Burger */
+
+   .burger__img{
+      padding: 17px 0;
+      margin-right: 5px;
+   }
+
+   .header__burger{
+      display: block;
+   }
+   .nav__link{
+      padding: 3px 0;
+   }
 }
 
 @media (max-height: 750px) {
@@ -256,7 +270,12 @@
       font-size: 85px;
       margin-bottom: 70px;
    }
+
+   /* Burger */
+
+   
 }
+
 
 @media(max-width: 550px) {
 
