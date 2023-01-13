@@ -816,6 +816,9 @@ font-weight: 700;
    background-color: var(--green);
    margin-bottom: 25px;
 }
+.team__item:hover {
+   cursor: url(../icons/cursor-hand.png), default;
+}
 .team__item:hover .team__social{
    opacity: 1;
 }
